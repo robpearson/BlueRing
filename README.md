@@ -15,7 +15,7 @@ NOTE: This is a side project that not associated with [Octopus](https://github.c
 
 ## Contributing
 
-Feel free to fork and submit pull requests.  Please create an Issue first to discuss the issue 
+Feel free to fork and submit pull requests.  Please create an [Issue][issues] first to discuss the issue and ensure it's in line with the project goals.
 
 ---
 
