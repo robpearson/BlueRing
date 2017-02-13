@@ -12,7 +12,13 @@
 		6811412B1E4C816C0077AA38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6811412A1E4C816C0077AA38 /* AppDelegate.swift */; };
 		6811412D1E4C816C0077AA38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6811412C1E4C816C0077AA38 /* Assets.xcassets */; };
 		681141301E4C816C0077AA38 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6811412E1E4C816C0077AA38 /* MainMenu.xib */; };
-		6811413B1E4C816C0077AA38 /* BlueRingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6811413A1E4C816C0077AA38 /* BlueRingTests.swift */; };
+		6811413B1E4C816C0077AA38 /* OctopusClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6811413A1E4C816C0077AA38 /* OctopusClientTests.swift */; };
+		6887021B1E4E71C600BD95D0 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6887021A1E4E71C600BD95D0 /* StatusMenuController.swift */; };
+		6887021C1E4E71C600BD95D0 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6887021A1E4E71C600BD95D0 /* StatusMenuController.swift */; };
+		6887021E1E4E72E800BD95D0 /* OctopusClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6887021D1E4E72E800BD95D0 /* OctopusClient.swift */; };
+		6887021F1E4E72E800BD95D0 /* OctopusClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6887021D1E4E72E800BD95D0 /* OctopusClient.swift */; };
+		68B28B651E51C5F100DBB45E /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B28B641E51C5F100DBB45E /* Project.swift */; };
+		68B28B661E51C5F100DBB45E /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B28B641E51C5F100DBB45E /* Project.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +40,11 @@
 		6811412F1E4C816C0077AA38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		681141311E4C816C0077AA38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		681141361E4C816C0077AA38 /* BlueRingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueRingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6811413A1E4C816C0077AA38 /* BlueRingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueRingTests.swift; sourceTree = "<group>"; };
+		6811413A1E4C816C0077AA38 /* OctopusClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctopusClientTests.swift; sourceTree = "<group>"; };
 		6811413C1E4C816C0077AA38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6887021A1E4E71C600BD95D0 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		6887021D1E4E72E800BD95D0 /* OctopusClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctopusClient.swift; sourceTree = "<group>"; };
+		68B28B641E51C5F100DBB45E /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		87BF2ABCB2F3325D658D22F3 /* Pods-BlueRingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueRingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B153F2F1B7FD6D9286E6800 /* Pods_BlueRing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueRing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0205F43AE6A3A3179FF030 /* Pods-BlueRingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueRingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,9 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				6811412A1E4C816C0077AA38 /* AppDelegate.swift */,
+				6887021A1E4E71C600BD95D0 /* StatusMenuController.swift */,
 				6811412C1E4C816C0077AA38 /* Assets.xcassets */,
 				6811412E1E4C816C0077AA38 /* MainMenu.xib */,
 				681141311E4C816C0077AA38 /* Info.plist */,
+				6887021D1E4E72E800BD95D0 /* OctopusClient.swift */,
+				68B28B641E51C5F100DBB45E /* Project.swift */,
 			);
 			path = BlueRing;
 			sourceTree = "<group>";
@@ -107,7 +119,7 @@
 		681141391E4C816C0077AA38 /* BlueRingTests */ = {
 			isa = PBXGroup;
 			children = (
-				6811413A1E4C816C0077AA38 /* BlueRingTests.swift */,
+				6811413A1E4C816C0077AA38 /* OctopusClientTests.swift */,
 				6811413C1E4C816C0077AA38 /* Info.plist */,
 			);
 			path = BlueRingTests;
@@ -325,7 +337,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6887021E1E4E72E800BD95D0 /* OctopusClient.swift in Sources */,
+				6887021B1E4E71C600BD95D0 /* StatusMenuController.swift in Sources */,
 				6811412B1E4C816C0077AA38 /* AppDelegate.swift in Sources */,
+				68B28B651E51C5F100DBB45E /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +348,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6811413B1E4C816C0077AA38 /* BlueRingTests.swift in Sources */,
+				6887021F1E4E72E800BD95D0 /* OctopusClient.swift in Sources */,
+				6887021C1E4E71C600BD95D0 /* StatusMenuController.swift in Sources */,
+				6811413B1E4C816C0077AA38 /* OctopusClientTests.swift in Sources */,
+				68B28B661E51C5F100DBB45E /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
