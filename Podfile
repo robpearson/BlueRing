@@ -11,6 +11,7 @@ target 'BlueRing' do
     # Pods for testing
     pod 'RxSwift',    '~> 3.0'
     pod 'RxCocoa',    '~> 3.0'
+    pod 'RxTest',     '~> 3.0'
     pod 'Nimble',     '~> 6.0.0'
   end
 

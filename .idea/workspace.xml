@@ -2,23 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b13532b-1497-45d1-a963-c813dee19ba2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BlueRing/OctopusService.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BlueRing/Project.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BlueRing/StatusMenuController.swift" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BlueRingTests/BlueRingTests.swift" afterPath="$PROJECT_DIR$/BlueRingTests/OctopusServiceTests.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlueRing.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/BlueRing.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlueRing/AppDelegate.swift" afterPath="$PROJECT_DIR$/BlueRing/AppDelegate.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BlueRing/Base.lproj/MainMenu.xib" afterPath="$PROJECT_DIR$/BlueRing/Base.lproj/MainMenu.xib" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Nimble/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Nimble/Nimble-dummy.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Nimble/Nimble-prefix.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Nimble/Nimble-umbrella.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Nimble/Nimble.modulemap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Nimble/Nimble.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRing/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRing/Pods-BlueRing-acknowledgements.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRing/Pods-BlueRing-acknowledgements.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRing/Pods-BlueRing-dummy.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRing/Pods-BlueRing-frameworks.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRing/Pods-BlueRing-resources.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRing/Pods-BlueRing-umbrella.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRing/Pods-BlueRing.debug.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRing/Pods-BlueRing.modulemap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRing/Pods-BlueRing.release.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests-acknowledgements.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests-acknowledgements.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests-dummy.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests-frameworks.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests-resources.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests-umbrella.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests.debug.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests.modulemap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests.release.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxCocoa/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxCocoa/RxCocoa-dummy.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxCocoa/RxCocoa-prefix.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxCocoa/RxCocoa-umbrella.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxCocoa/RxCocoa.modulemap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxCocoa/RxCocoa.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxSwift/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxSwift/RxSwift-dummy.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxSwift/RxSwift-prefix.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxSwift/RxSwift-umbrella.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxSwift/RxSwift.modulemap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/RxSwift/RxSwift.xcconfig" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile" afterPath="$PROJECT_DIR$/Podfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile.lock" afterPath="$PROJECT_DIR$/Podfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests-acknowledgements.markdown" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests-acknowledgements.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests-acknowledgements.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests-acknowledgements.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests-frameworks.sh" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests-frameworks.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests.debug.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests.debug.xcconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests.release.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-BlueRingTests/Pods-BlueRingTests.release.xcconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,35 +55,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="macos_x86_64" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OctopusServiceTests.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BlueRingTests/OctopusServiceTests.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
-              <folding>
-                <element signature="e#154#167#0" expanded="true" />
-                <marker date="1486994729000" expanded="true" signature="669:675" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OctopusService.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BlueRing/OctopusService.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Project.swift" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Project.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BlueRing/Project.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <marker date="1486997510000" expanded="true" signature="176:430" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,9 +86,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/BlueRing/StatusMenuController.swift" />
-        <option value="$PROJECT_DIR$/BlueRing/Project.swift" />
         <option value="$PROJECT_DIR$/BlueRing/OctopusService.swift" />
         <option value="$PROJECT_DIR$/BlueRingTests/OctopusServiceTests.swift" />
+        <option value="$PROJECT_DIR$/BlueRing/Project.swift" />
       </list>
     </option>
   </component>
@@ -223,7 +224,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="853" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -260,10 +261,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="e#154#167#0" expanded="true" />
-            <marker date="1486994729000" expanded="true" signature="669:675" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -279,10 +277,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#154#167#0" expanded="true" />
-            <marker date="1486994729000" expanded="true" signature="669:675" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -294,10 +289,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlueRing/Project.swift">
+    <entry file="file://$PROJECT_DIR$/BlueRingTests/OctopusServiceTests.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -305,18 +300,17 @@
     <entry file="file://$PROJECT_DIR$/BlueRing/OctopusService.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlueRingTests/OctopusServiceTests.swift">
+    <entry file="file://$PROJECT_DIR$/BlueRing/Project.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="e#154#167#0" expanded="true" />
-            <marker date="1486994729000" expanded="true" signature="669:675" ph="{...}" />
+            <marker date="1486997510000" expanded="true" signature="176:430" ph="{...}" />
           </folding>
         </state>
       </provider>
