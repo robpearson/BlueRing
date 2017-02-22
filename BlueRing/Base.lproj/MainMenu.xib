@@ -3,6 +3,9 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -16,11 +19,23 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="IQl-7C-wnS" customClass="StatusMenuController" customModule="BlueRing" customModuleProvider="target">
             <connections>
+                <outlet property="projectView" destination="SUv-Ja-NOp" id="rnX-Rr-DYh"/>
                 <outlet property="statusMenu" destination="mrF-cc-fwt" id="S47-cF-nMc"/>
             </connections>
         </customObject>
         <menu id="mrF-cc-fwt">
             <items>
+                <menuItem title="Update" id="blR-uV-cjs">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="updateClicked:" target="IQl-7C-wnS" id="ESD-kq-nCh"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="0wT-ee-j3g"/>
+                <menuItem title="Project" id="107-9J-DCu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="mgf-Im-1NL"/>
                 <menuItem title="Quit" id="VQv-9N-hCa">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -29,5 +44,95 @@
                 </menuItem>
             </items>
         </menu>
+        <customView id="SUv-Ja-NOp" customClass="ProjectView" customModule="BlueRing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OdH-6w-aVR">
+                    <rect key="frame" x="20" y="76" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="star" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ZTq-BO-VWW">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <box fixedFrame="YES" title="Dev" translatesAutoresizingMaskIntoConstraints="NO" id="7ce-QX-817">
+                    <rect key="frame" x="17" y="-4" width="93" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="BHA-jh-vby">
+                        <rect key="frame" x="2" y="2" width="89" height="47"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v65-BV-CDR">
+                                <rect key="frame" x="18" y="15" width="53" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0.0.0" id="a20-ZY-Tmr">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </box>
+                <box fixedFrame="YES" title="Test" translatesAutoresizingMaskIntoConstraints="NO" id="mN5-EK-mUW">
+                    <rect key="frame" x="121" y="-4" width="93" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="FAG-nO-gyh">
+                        <rect key="frame" x="2" y="2" width="89" height="47"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbB-5B-b5o">
+                                <rect key="frame" x="18" y="15" width="53" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0.0.0" id="4VB-TJ-TnX">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </box>
+                <box fixedFrame="YES" title="Prod" translatesAutoresizingMaskIntoConstraints="NO" id="jps-QR-dAK">
+                    <rect key="frame" x="224" y="-4" width="93" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="6pW-8K-kzb">
+                        <rect key="frame" x="2" y="2" width="89" height="47"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjQ-nu-1ya">
+                                <rect key="frame" x="18" y="15" width="53" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0.0.0" id="TUb-Bl-k8A">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJ8-17-jqz">
+                    <rect key="frame" x="83" y="80" width="233" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Project Name" id="izV-Bp-mPn">
+                        <font key="font" metaFont="systemMedium" size="32"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <connections>
+                <outlet property="devReleaseTextField" destination="v65-BV-CDR" id="hmg-vd-ZTy"/>
+                <outlet property="prodReleaseTextField" destination="QjQ-nu-1ya" id="7on-zD-n8Y"/>
+                <outlet property="projectNameTextField" destination="cJ8-17-jqz" id="4MC-QP-gR0"/>
+                <outlet property="testReleaseTextField" destination="mbB-5B-b5o" id="4tg-Eo-mVG"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="370"/>
+        </customView>
     </objects>
+    <resources>
+        <image name="star" width="405.75" height="384.75"/>
+    </resources>
 </document>
