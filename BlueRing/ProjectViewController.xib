@@ -11,54 +11,57 @@
         <customObject id="-2" userLabel="File's Owner" customClass="ProjectViewController" customModule="BlueRing" customModuleProvider="target">
             <connections>
                 <outlet property="devReleaseTextField" destination="dH8-Mg-qUw" id="Szf-2C-SoI"/>
-                <outlet property="prodReleaseTextField" destination="zde-xa-qnG" id="pUc-hm-o42"/>
+                <outlet property="prodReleaseTextField" destination="T3A-zk-0gY" id="y5l-e0-Vkg"/>
                 <outlet property="projectNameTextField" destination="7AB-Q2-o1O" id="agD-oe-VlS"/>
-                <outlet property="testReleaseTextField" destination="cHS-14-SBw" id="vaX-5B-bBv"/>
+                <outlet property="testReleaseTextField" destination="IBj-Bd-tJN" id="v3C-4v-B85"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="294" height="124"/>
+            <rect key="frame" x="0.0" y="0.0" width="258" height="195"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boI-RX-FCf">
+                    <rect key="frame" x="5" y="164" width="157" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Favourite Projects" id="suP-jw-bS8">
+                        <font key="font" metaFont="systemSemibold" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="EiY-UQ-wBi">
+                    <rect key="frame" x="0.0" y="156" width="258" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </box>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5FS-K9-7co">
-                    <rect key="frame" x="0.0" y="76" width="48" height="48"/>
+                    <rect key="frame" x="0.0" y="114" width="28" height="28"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="star" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="kpL-vu-mUV">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                 </button>
-                <box fixedFrame="YES" title="Prod" translatesAutoresizingMaskIntoConstraints="NO" id="FrT-hg-Zlh">
-                    <rect key="frame" x="204" y="-4" width="93" height="64"/>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AB-Q2-o1O">
+                    <rect key="frame" x="34" y="118" width="181" height="19"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <view key="contentView" id="Izz-N6-roP">
-                        <rect key="frame" x="2" y="2" width="89" height="47"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zde-xa-qnG">
-                                <rect key="frame" x="18" y="15" width="53" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0.0.0" id="GoY-JV-LRX">
-                                    <font key="font" metaFont="systemBold"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                        </subviews>
-                    </view>
-                </box>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Project Name" id="E5Y-RY-dlI">
+                        <font key="font" metaFont="systemMedium" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
                 <box fixedFrame="YES" title="Dev" translatesAutoresizingMaskIntoConstraints="NO" id="A0M-eX-EFn">
-                    <rect key="frame" x="-3" y="-4" width="93" height="64"/>
+                    <rect key="frame" x="-3" y="62" width="68" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <view key="contentView" id="6eH-vr-kBj">
-                        <rect key="frame" x="2" y="2" width="89" height="47"/>
+                        <rect key="frame" x="2" y="2" width="64" height="27"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dH8-Mg-qUw">
-                                <rect key="frame" x="18" y="15" width="53" height="17"/>
+                                <rect key="frame" x="6" y="5" width="53" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0.0.0" id="giU-Zb-gaA">
                                     <font key="font" metaFont="systemBold"/>
@@ -69,17 +72,17 @@
                         </subviews>
                     </view>
                 </box>
-                <box fixedFrame="YES" title="Test" translatesAutoresizingMaskIntoConstraints="NO" id="jpj-oL-0RT">
-                    <rect key="frame" x="101" y="-4" width="93" height="64"/>
+                <box fixedFrame="YES" title="Prod" translatesAutoresizingMaskIntoConstraints="NO" id="csS-DZ-W6R">
+                    <rect key="frame" x="193" y="62" width="68" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <view key="contentView" id="aij-fb-1As">
-                        <rect key="frame" x="2" y="2" width="89" height="47"/>
+                    <view key="contentView" id="bWi-Db-jxP">
+                        <rect key="frame" x="2" y="2" width="64" height="27"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHS-14-SBw">
-                                <rect key="frame" x="18" y="15" width="53" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3A-zk-0gY">
+                                <rect key="frame" x="6" y="5" width="53" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0.0.0" id="r96-k1-yRg">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0.0.0" id="hQE-ba-9kx">
                                     <font key="font" metaFont="systemBold"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -88,17 +91,48 @@
                         </subviews>
                     </view>
                 </box>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AB-Q2-o1O">
-                    <rect key="frame" x="63" y="80" width="233" height="39"/>
+                <box fixedFrame="YES" title="Test" translatesAutoresizingMaskIntoConstraints="NO" id="Uje-gu-EHt">
+                    <rect key="frame" x="95" y="62" width="68" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Project Name" id="E5Y-RY-dlI">
-                        <font key="font" metaFont="systemMedium" size="32"/>
+                    <view key="contentView" id="gOF-Ow-DGw">
+                        <rect key="frame" x="2" y="2" width="64" height="27"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBj-Bd-tJN">
+                                <rect key="frame" x="6" y="5" width="53" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0.0.0" id="on7-Bk-g37">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </box>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBE-9l-9ci">
+                    <rect key="frame" x="215" y="110" width="49" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="+" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Jcx-35-cbh">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="krO-En-IZS">
+                    <rect key="frame" x="0.0" y="42" width="258" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVo-f2-bTx">
+                    <rect key="frame" x="205" y="13" width="44" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Config" id="Quz-vc-h6d">
+                        <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
             </subviews>
-            <point key="canvasLocation" x="29" y="94"/>
+            <point key="canvasLocation" x="23" y="135.5"/>
         </customView>
     </objects>
     <resources>

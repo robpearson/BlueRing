@@ -24,4 +24,6 @@ class Project: NSObject {
         self.releasesByEnvironment = releasesByEnvironment
     }
 
+    
+    
 }
