@@ -1,19 +1,24 @@
 //
-//  ProjectView.swift
+//  ProjectViewController.swift
 //  BlueRing
 //
-//  Created by Robert Pearson on 22/2/17.
+//  Created by Robert Pearson on 23/2/17.
 //  Copyright © 2017 Rob Pearson. All rights reserved.
 //
 
 import Cocoa
 
-class ProjectView: NSView {
+class ProjectViewController: NSViewController {
 
     @IBOutlet weak var projectNameTextField: NSTextField!
     @IBOutlet weak var devReleaseTextField: NSTextField!
     @IBOutlet weak var testReleaseTextField: NSTextField!
     @IBOutlet weak var prodReleaseTextField: NSTextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do view setup here.
+    }
     
     func update(project: Project) {
         // do UI updates on the main thread
@@ -24,6 +29,5 @@ class ProjectView: NSView {
             self.prodReleaseTextField.stringValue = (project.releasesByEnvironment["prod"]?.first)!
         }
     }
-
     
 }

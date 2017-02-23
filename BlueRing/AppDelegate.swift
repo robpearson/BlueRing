@@ -11,11 +11,40 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+    let appStatusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
+    let appPopover = NSPopover()
+    
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
+        
+        if let button = appStatusItem.button {
+            button.image = NSImage(named: "statusIcon")
+            button.action = #selector(AppDelegate.togglePopover)
+        }
+        
+        appPopover.contentViewController = ProjectViewController(nibName: "ProjectViewController", bundle: nil)
+        
     }
-    func applicationWillTerminate(aNotification: NSNotification) {
+    
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
+    }
+    
+    func showPopover(sender: AnyObject?) {
+        if let button = appStatusItem.button {
+            appPopover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
+        }
+    }
+    
+    func closePopover(sender: AnyObject?) {
+        appPopover.performClose(sender)
+    }
+    
+    public func togglePopover(sender: AnyObject?) {
+        if appPopover.isShown {
+            closePopover(sender: sender)
+        } else {
+            showPopover(sender: sender)
+        }
     }
 
 }

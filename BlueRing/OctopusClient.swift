@@ -15,7 +15,7 @@ class OctopusClient: NSObject {
     public func getAllProjects() -> Observable<String> {
         
         let session = URLSession.shared
-        let url = URL(string: "https://demo.octopus.com/api/projects/all?apiKey=API-GUEST") // hard coded for now
+        let url = URL(string: "http://192.168.8.107/api/projects/all?apiKey=API-GUEST") // hard coded for now
         
         let observable = Observable<String>.create { observer in
             
